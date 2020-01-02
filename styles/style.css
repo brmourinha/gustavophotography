@@ -307,8 +307,8 @@ footer ul {
     height: 50%;
   }
   #gallery {
-    -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
   #gallery img {
     grid-row: auto;
