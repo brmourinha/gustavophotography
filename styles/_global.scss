@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 ul {
@@ -46,9 +46,6 @@ p {
 button {
   cursor: pointer;
   background-color: #fdba2a6c;
-  a {
-    color: $color-text;
-  }
 }
 
 a {
