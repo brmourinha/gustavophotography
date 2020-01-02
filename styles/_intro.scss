@@ -1,0 +1,56 @@
+/* Navbar */
+.main-head {
+  min-height: 10vh;
+  @include flex(space-between, center, row);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  nav {
+    width: 90%;
+    margin: auto;
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+
+    h1 {
+      font-family: "Oswald", sans-serif;
+      flex: 1 1 20rem;
+    }
+
+    ul {
+      @include flex(space-around, center, row);
+      flex: 1 1 20rem;
+    }
+  }
+}
+
+/* Introduction */
+
+.introduction {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+
+  @include flex(space-between, center, row);
+}
+
+.intro-text {
+  flex: 1 1 40rem;
+  text-align: center;
+  p {
+    margin-top: 2rem;
+  }
+  button {
+    margin-top: 2rem;
+    border-color: black;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    color: $color-text;
+  }
+}
+
+.intro-img {
+  flex: 1 1 40rem;
+  img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,21 @@
+#contact {
+  min-height: 90vh;
+  @include flex(center, center, column);
+
+  form {
+    margin-top: 2rem;
+    @include flex(space-around, center, column);
+    label,
+    input {
+      margin-top: 0.5rem;
+      padding: 0.5rem 2rem;
+    }
+    button {
+      margin-top: 2rem;
+      border-color: black;
+      padding: 1rem 3rem;
+      border-radius: 1rem;
+      color: $color-text;
+    }
+  }
+}

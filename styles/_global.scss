@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+  scroll-behavior: smooth;
+  background-color: $background-color;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: $header1;
+  color: $color-text;
+}
+h2 {
+  font-size: $header2;
+  color: $color-text;
+}
+h3 {
+  font-size: $header3;
+  color: $color-text;
+}
+h4,
+h5 {
+  font-size: $header4;
+  color: $color-text;
+}
+
+a,
+li,
+label,
+p {
+  font-size: $text;
+  color: $color-text;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fdba2a6c;
+  a {
+    color: $color-text;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+  cursor: pointer;
+}

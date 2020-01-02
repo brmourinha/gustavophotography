@@ -1,0 +1,11 @@
+footer {
+  min-height: 10vh;
+  @include flex(space-between, center, row);
+  h4 {
+    margin-left: 5%;
+  }
+  ul {
+    @include flex(space-around, center, row);
+    margin-right: 5%;
+  }
+}
