@@ -39,6 +39,9 @@ $background-color: black;
 }
 
 @media screen and(max-width: 710px) {
+  html {
+    font-size: 55%;
+  }
   .intro-img {
     img {
       width: 60%;
