@@ -13,8 +13,86 @@ $background-color: black;
   flex-direction: $direction;
 }
 
-@import "global";
-@import "intro";
-@import "gallery";
-@import "contact";
-@import "footer";
+@import 'global';
+@import 'intro';
+@import 'gallery';
+@import 'contact';
+@import 'footer';
+
+/* Media Queries*/
+@media screen and(max-width: 1422px) {
+  .intro-img {
+    text-align: center;
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  #gallery {
+    img {
+      grid-row: auto;
+      grid-column: auto;
+    }
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media screen and(max-width: 710px) {
+  .intro-img {
+    img {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  /* Burguer Menu*/
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+    span {
+      padding: 0.2rem 1.5rem;
+      background: $color-text;
+      margin: 0.5rem 0rem;
+      display: block;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .nav-open {
+    transform: translateX(-100%);
+  }
+
+  .toggle {
+    .line1 {
+      transform: rotateZ(45deg) translateY(300%);
+    }
+    .line2 {
+      opacity: 0;
+    }
+    .line3 {
+      transform: rotateZ(-45deg) translateY(-300%);
+    }
+  }
+  .main-head {
+    nav {
+      ul {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 1s ease;
+        a {
+          font-size: $header1;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
