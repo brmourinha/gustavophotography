@@ -19,3 +19,34 @@
   grid-column: 4/5;
   grid-row: 2/4;
 }
+
+.zoom {
+  position: fixed;
+  object-fit: fill;
+  left: 50%;
+  top: 50%;
+  border: 0.5rem solid $color-text;
+  border-radius: 1rem;
+  transform: translate(-50%, -50%);
+  animation: zoomAnimation 1s ease forwards;
+}
+
+@keyframes zoomAnimation {
+  from {
+    width: 10vh;
+    height: 10vh;
+  }
+  to {
+    width: 70vw;
+    height: 70vh;
+  }
+}
+
+@keyframes zoomAnimation2 {
+  from {
+    width: 70vh;
+    height: 70vh;
+  }
+  to {
+  }
+}

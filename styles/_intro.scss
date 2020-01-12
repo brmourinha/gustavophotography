@@ -9,7 +9,7 @@
     @include flex(space-between, center, row);
 
     h1 {
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       flex: 1 1 20rem;
     }
 
@@ -29,9 +29,7 @@
   min-height: 90vh;
   width: 90%;
   margin: auto;
-
   @include flex(space-between, center, row);
-  flex-wrap: wrap;
 }
 
 .intro-text {
@@ -52,8 +50,8 @@
 .intro-img {
   flex: 1 1 40rem;
   img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
   }
 }

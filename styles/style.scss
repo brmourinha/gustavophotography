@@ -13,14 +13,17 @@ $background-color: black;
   flex-direction: $direction;
 }
 
-@import 'global';
-@import 'intro';
-@import 'gallery';
-@import 'contact';
-@import 'footer';
+@import "global";
+@import "intro";
+@import "gallery";
+@import "contact";
+@import "footer";
 
 /* Media Queries*/
-@media screen and(max-width: 1422px) {
+@media screen and(max-width: 1024px) {
+  .introduction {
+    flex-wrap: wrap;
+  }
   .intro-img {
     text-align: center;
     img {
