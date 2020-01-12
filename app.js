@@ -3,17 +3,15 @@ const gallery = document.querySelector("#gallery");
 const images = gallery.querySelectorAll("img");
 
 document.body.addEventListener("click", e => {
-  if (!e.target.classList.contains("zoom")) {
-    const elem = document.querySelector(".zoom");
-
-    if (elem !== null && elem.classList.contains("zoom")) {
-      elem.parentNode.removeChild(elem);
-    }
-  }
-  if (e.target.classList.contains("image")) {
+  const elem = document.querySelector(".zoom");
+  if (e.target.classList.contains("image") && elem === null) {
     let cln = e.target.cloneNode(true);
     cln.classList.add("zoom");
     document.body.appendChild(cln);
+  } else if (!e.target.classList.contains("zoom")) {
+    if (elem !== null && elem.classList.contains("zoom")) {
+      elem.parentNode.removeChild(elem);
+    }
   }
 });
 
