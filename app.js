@@ -10,7 +10,10 @@ document.body.addEventListener("click", e => {
     document.body.appendChild(cln);
   } else if (!e.target.classList.contains("zoom")) {
     if (elem !== null && elem.classList.contains("zoom")) {
-      elem.parentNode.removeChild(elem);
+      elem.style.animation = "zoomOut 1s ease forwards";
+      setTimeout(() => {
+        elem.parentNode.removeChild(elem);
+      }, 800);
     }
   }
 });

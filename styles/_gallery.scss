@@ -4,6 +4,7 @@
   grid-template-columns: repeat(4, 1fr);
 
   img {
+    cursor: pointer;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -28,10 +29,10 @@
   border: 0.5rem solid $color-text;
   border-radius: 1rem;
   transform: translate(-50%, -50%);
-  animation: zoomAnimation 1s ease forwards;
+  animation: zoomIn 1s ease forwards;
 }
 
-@keyframes zoomAnimation {
+@keyframes zoomIn {
   from {
     width: 10vh;
     height: 10vh;
@@ -42,11 +43,13 @@
   }
 }
 
-@keyframes zoomAnimation2 {
+@keyframes zoomOut {
   from {
-    width: 70vh;
+    width: 70vw;
     height: 70vh;
   }
   to {
+    width: 0vw;
+    height: 0vh;
   }
 }
